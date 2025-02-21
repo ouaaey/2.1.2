@@ -5,5 +5,6 @@ public class PojoCat {
     }
     public void setName(String name) {
         this.name = name;
+
     }
 }
