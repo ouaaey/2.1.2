@@ -11,4 +11,9 @@ public class AppConfig {
         helloWorld.setMessage("Hello World!");
         return helloWorld;
     }
+    @Bean(name = "cat")
+    @Scope("prototype") //новый при каждом запросе !!
+    public PojoCat getCat(){
+        return new PojoCat();
+    }
 }
